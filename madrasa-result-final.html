@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>মারকাযু উলুমিল কুরআন — ফলাফল পোর্টাল</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Bengali:wght@400;600;700&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+
+<!-- ══ ISLAMIC FAVICON (SVG Star & Crescent) ══ -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231a3a2a'/%3E%3Ccircle cx='30' cy='28' r='14' fill='%23c9a84c'/%3E%3Ccircle cx='35' cy='23' r='10' fill='%231a3a2a'/%3E%3Cpolygon points='50,18 51.5,23 56,23 52.5,26 54,31 50,28 46,31 47.5,26 44,23 48.5,23' fill='%23c9a84c'/%3E%3C/svg%3E">
+
+<style>
+:root{--gd:#1a3a2a;--gm:#2d6a4f;--gl:#40916c;--gold:#c9a84c;--gol:#e8c97a;--cr:#fdf6e3;--cd:#f0e6c8;--td:#1a1a1a;--tm:#3a3a3a;--sh:0 8px 40px rgba(0,0,0,.18)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Serif Bengali',serif;background:var(--gd);min-height:100vh;color:var(--td);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(201,168,76,.04) 30px,rgba(201,168,76,.04) 31px),repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(201,168,76,.04) 30px,rgba(201,168,76,.04) 31px);pointer-events:none;z-index:0}
+
+/* ── HEADER ── */
+header{position:relative;z-index:10;background:linear-gradient(135deg,var(--gd) 0%,#0f2419 100%);border-bottom:3px solid var(--gold);padding:24px 20px 20px;text-align:center}
+.h-logo{margin-bottom:10px}
+.h-logo svg{width:56px;height:56px;filter:drop-shadow(0 2px 8px rgba(201,168,76,.4))}
+.h-ornament{font-family:'Amiri',serif;font-size:1.4rem;color:var(--gold);letter-spacing:6px;opacity:.85;margin-bottom:6px}
+.h-ar{font-family:'Amiri',serif;font-size:2.4rem;color:var(--gol);line-height:1.3;transition:all .3s}
+.h-bn{font-family:'Noto Serif Bengali',serif;font-size:1.15rem;color:var(--cd);font-weight:600;margin-top:4px;letter-spacing:1px;transition:all .3s}
+.h-sub{font-size:.83rem;color:rgba(201,168,76,.7);margin-top:10px;letter-spacing:2px;min-height:1.2em}
+.gold-line{width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:10px auto 0}
+
+/* ── TABS ── */
+.tab-bar{position:relative;z-index:10;display:flex;justify-content:center;background:rgba(0,0,0,.3);border-bottom:1px solid rgba(201,168,76,.3);flex-wrap:wrap}
+.tab-btn{padding:13px 26px;background:transparent;border:none;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.93rem;font-weight:600;color:rgba(253,246,227,.6);border-bottom:3px solid transparent;transition:all .3s}
+.tab-btn:hover{color:var(--cr)}
+.tab-btn.active{color:var(--gol);border-bottom-color:var(--gold);background:rgba(201,168,76,.08)}
+
+/* ── MAIN ── */
+main{position:relative;z-index:5;max-width:840px;margin:40px auto;padding:0 16px 60px}
+.panel{display:none;animation:fadeUp .5s ease both}.panel.active{display:block}
+
+/* ── CARD ── */
+.card{background:var(--cr);border-radius:12px;box-shadow:var(--sh),0 0 0 1px rgba(201,168,76,.25);overflow:hidden;margin-bottom:24px}
+.card-header{background:linear-gradient(135deg,var(--gm),var(--gd));padding:20px 24px;display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--gold)}
+.card-icon{font-size:1.7rem}.card-title{font-family:'Noto Serif Bengali',serif;font-size:1.12rem;font-weight:700;color:var(--gol)}
+.card-sub{font-size:.76rem;color:rgba(253,246,227,.65);margin-top:2px}.card-body{padding:26px 22px}
+
+/* ── FORM ── */
+.fg{margin-bottom:18px}
+label{display:block;font-weight:600;margin-bottom:7px;color:var(--gd);font-size:.9rem}
+input[type=text],input[type=password],select,textarea{width:100%;padding:11px 14px;border:2px solid #d4c9a0;border-radius:8px;font-family:'Noto Serif Bengali',serif;font-size:1rem;background:#fff;color:var(--td);transition:border-color .25s,box-shadow .25s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gm);box-shadow:0 0 0 3px rgba(45,106,79,.12)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:8px;border:none;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:1rem;font-weight:700;transition:all .25s;justify-content:center;width:100%}
+.btn-p{background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);box-shadow:0 4px 16px rgba(45,106,79,.35);border:1px solid rgba(201,168,76,.3)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,106,79,.45)}
+.btn-p:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn-g{background:linear-gradient(135deg,var(--gold),#a07830);color:var(--gd);box-shadow:0 4px 16px rgba(201,168,76,.35)}
+.btn-g:hover{transform:translateY(-2px)}.btn-g:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn-d{background:#dc3545;color:white;padding:7px 13px;border-radius:6px;border:none;cursor:pointer;font-size:.79rem;font-family:'Noto Serif Bengali',serif;white-space:nowrap}
+.btn-d:hover{background:#c82333}
+.btn-settings{padding:9px 16px;background:rgba(201,168,76,.15);color:var(--gol);border:1px solid rgba(201,168,76,.4);border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.86rem;font-weight:700;transition:all .25s;white-space:nowrap}
+.btn-settings:hover{background:rgba(201,168,76,.28);transform:translateY(-1px)}
+
+/* ── SPINNER ── */
+.spin{display:inline-block;width:17px;height:17px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spinA .7s linear infinite}
+@keyframes spinA{to{transform:rotate(360deg)}}
+
+/* ── ALERT ── */
+.alert{padding:12px 15px;border-radius:8px;font-size:.88rem;margin-top:12px;display:none;align-items:center;gap:8px}
+.alert.show{display:flex}
+.a-s{background:#d4edda;color:#155724;border:1px solid #c3e6cb}
+.a-e{background:#f8d7da;color:#721c24;border:1px solid #f5c6cb}
+.a-i{background:#cce5ff;color:#004085;border:1px solid #b8daff}
+
+/* ── RESULT ── */
+.result-box{display:none;margin-top:22px;animation:fadeUp .5s ease both}.result-box.show{display:block}
+.res-head{background:linear-gradient(135deg,var(--gd),#0f2419);border-radius:10px 10px 0 0;padding:18px 22px;border:1px solid rgba(201,168,76,.4);border-bottom:none;text-align:center}
+.res-name{font-family:'Amiri',serif;font-size:1.55rem;color:var(--gol);margin-bottom:8px}
+.res-meta{font-size:.82rem;color:rgba(253,246,227,.75);display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.res-meta span{background:rgba(201,168,76,.18);padding:4px 12px;border-radius:20px;border:1px solid rgba(201,168,76,.35);display:inline-block}
+.res-table{border:1px solid rgba(201,168,76,.3);border-top:none;border-radius:0 0 10px 10px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+thead{background:var(--gm)}
+thead th{padding:11px 14px;color:var(--gol);font-weight:700;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+tbody tr:nth-child(even){background:#f5edcc}tbody tr:nth-child(odd){background:var(--cr)}tbody tr:hover{background:#e8ddb0}
+tbody td{padding:10px 14px;text-align:center;border-right:1px solid #d4c9a0;border-bottom:1px solid #d4c9a0;color:var(--tm)}
+tbody td:first-child{text-align:left;font-weight:600;color:var(--gd)}
+.gb{display:inline-block;padding:3px 10px;border-radius:20px;font-weight:700;font-size:.86rem}
+.gA{background:#d4edda;color:#155724}.gB{background:#cce5ff;color:#004085}
+.gC{background:#fff3cd;color:#856404}.gD,.gF{background:#f8d7da;color:#721c24}
+.res-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.sum-card{background:linear-gradient(135deg,var(--gm),var(--gd));border-radius:10px;padding:13px;text-align:center;border:1px solid rgba(201,168,76,.3)}
+.sum-lbl{font-size:.73rem;color:rgba(253,246,227,.65);margin-bottom:4px}
+.sum-val{font-size:1.35rem;font-weight:700;color:var(--gol);font-family:'Cinzel',serif}
+.not-found{text-align:center;padding:34px;display:none}.not-found.show{display:block}
+.not-found .icon{font-size:2.8rem}.not-found h3{color:var(--gd);margin:10px 0 5px;font-size:1.05rem}
+.not-found p{color:#666;font-size:.86rem}
+
+/* ── DOWNLOAD ── */
+.dl-bar{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.btn-dl{flex:1;min-width:130px;padding:11px 16px;border:none;border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.92rem;font-weight:700;background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);border:1px solid rgba(201,168,76,.3);box-shadow:0 4px 12px rgba(45,106,79,.3);transition:all .25s;display:flex;align-items:center;justify-content:center;gap:7px}
+.btn-dl:hover{transform:translateY(-2px)}
+.btn-dl-g{background:linear-gradient(135deg,var(--gold),#a07830);color:var(--gd)}
+
+/* ── ADMIN ── */
+.paste-area{min-height:140px;resize:vertical;font-family:monospace;font-size:.84rem;line-height:1.6}
+.help-text{font-size:.76rem;color:#666;margin-top:5px;font-style:italic}
+.prev-tbl{margin-top:16px;overflow-x:auto;border-radius:8px;border:1px solid #d4c9a0;display:none}
+.prev-tbl.show{display:block}.prev-tbl table{font-size:.82rem}
+.prev-tbl thead{background:var(--gl)}.prev-tbl thead th{padding:8px 12px;color:white}
+.prev-tbl tbody td{padding:7px 12px}
+.saved-entry{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#fff;border:1px solid #d4c9a0;border-radius:8px;margin-bottom:8px;gap:10px}
+.saved-entry .meta{font-size:.88rem;color:var(--tm)}.saved-entry .cnt{font-size:.78rem;color:var(--gm);font-weight:600;margin-top:2px}
+.empty-st{text-align:center;padding:36px 20px;color:#888}.empty-st .icon{font-size:2.5rem;margin-bottom:10px}
+.cbadge{display:inline-flex;align-items:center;gap:6px;background:#d4edda;color:#155724;padding:5px 13px;border-radius:20px;font-size:.81rem;font-weight:600}
+
+/* ── MEDIA POPUP ── */
+.media-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:3000;align-items:center;justify-content:center;padding:16px}
+.media-overlay.show{display:flex;animation:fadeIn .3s ease}
+.media-box{position:relative;border-radius:12px;overflow:hidden;border:2px solid rgba(201,168,76,.5);box-shadow:0 20px 60px rgba(0,0,0,.6);max-width:90vw}
+.media-box img{display:block;max-width:min(520px,88vw);max-height:80vh;width:100%;object-fit:contain;background:#000}
+.media-box video{display:block;max-width:min(600px,92vw);max-height:80vh;width:100%;background:#000}
+.media-close{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.7);color:white;border:1px solid rgba(255,255,255,.3);border-radius:50%;width:36px;height:36px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:background .2s}
+.media-close:hover{background:rgba(220,53,69,.85)}
+
+/* ── SETTINGS MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:1000;overflow-y:auto;padding:20px 16px}
+.modal-overlay.show{display:block}
+.modal-box{max-width:580px;margin:0 auto;background:var(--cr);border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);border:2px solid rgba(201,168,76,.4)}
+.modal-head{background:linear-gradient(135deg,var(--gd),#0f2419);padding:17px 21px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--gold)}
+.modal-title{font-size:1.08rem;font-weight:700;color:var(--gol);font-family:'Noto Serif Bengali',serif}
+.modal-sub{font-size:.74rem;color:rgba(253,246,227,.6);margin-top:2px}
+.mcb{background:rgba(255,255,255,.1);border:none;color:var(--gol);font-size:1.2rem;cursor:pointer;border-radius:50%;width:33px;height:33px;display:flex;align-items:center;justify-content:center}
+.modal-body{padding:22px 20px}
+.set-tabs{display:flex;margin-bottom:16px;border-radius:8px;overflow:hidden;border:1px solid #d4c9a0}
+.set-tab{flex:1;padding:10px 6px;background:#fff;border:none;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.82rem;font-weight:600;color:#666;transition:all .2s;border-right:1px solid #d4c9a0}
+.set-tab:last-child{border-right:none}.set-tab.active{background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol)}
+.set-panel{display:none}.set-panel.active{display:block}
+.set-sec{background:#fff;border:1px solid #d4c9a0;border-radius:10px;padding:15px;margin-bottom:13px}
+.set-sec-t{font-weight:700;color:var(--gd);margin-bottom:11px;font-size:.88rem;border-bottom:2px solid var(--gold);padding-bottom:6px}
+.prev-box{background:linear-gradient(135deg,var(--gd),#0f2419);border-radius:10px;padding:16px;text-align:center;margin-bottom:16px;border:1px solid rgba(201,168,76,.3)}
+.prev-lbl{font-size:.7rem;color:rgba(201,168,76,.6);letter-spacing:2px;margin-bottom:7px}
+
+/* MEDIA UPLOAD */
+.mua{border:2px dashed #d4c9a0;border-radius:10px;padding:18px;text-align:center;background:#fafaf5;position:relative;cursor:pointer;transition:border-color .2s}
+.mua:hover{border-color:var(--gm)}.mua input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.m-status{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:#f5edcc;border-radius:8px;margin-top:8px;border:1px solid #d4c9a0;font-size:.83rem;flex-wrap:wrap;gap:8px}
+.prog-bar{width:100%;height:6px;background:#d4c9a0;border-radius:3px;margin-top:8px;overflow:hidden;display:none}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gm),var(--gold));border-radius:3px;width:0;transition:width .3s}
+
+/* FOOTER */
+footer{position:relative;z-index:5;text-align:center;padding:18px;color:rgba(253,246,227,.4);font-size:.74rem;border-top:1px solid rgba(201,168,76,.15)}
+
+@keyframes fadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+@media(max-width:600px){
+  .form-row{grid-template-columns:1fr}
+  .res-sum{grid-template-columns:1fr 1fr}
+  .card-body{padding:16px 13px}
+  .h-ar{font-size:1.75rem}
+  .h-bn{font-size:1rem}
+  .tab-btn{padding:11px 13px;font-size:.82rem}
+  .dl-bar{flex-direction:column}
+  .set-tab{font-size:.76rem;padding:9px 4px}
+  .res-name{font-size:1.3rem}
+  .res-meta{gap:6px}
+  .res-meta span{font-size:.76rem;padding:3px 8px}
+  .sum-val{font-size:1.1rem}
+  .media-box img{max-width:94vw;max-height:75vh}
+  .modal-box{margin:8px auto}
+  .modal-body{padding:16px 14px}
+  table{font-size:.85rem}
+  thead th{padding:9px 10px}
+  tbody td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ MEDIA POPUP ══ -->
+<div id="media-overlay" class="media-overlay" onclick="if(event.target===this)closeMedia()">
+  <div class="media-box" id="media-box">
+    <button class="media-close" onclick="closeMedia()">✕</button>
+    <img id="media-img" src="" alt="" style="display:none">
+    <video id="media-vid" controls playsinline style="display:none"></video>
+  </div>
+</div>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <!-- Islamic Logo: Star & Crescent -->
+  <div class="h-logo">
+    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer glow ring -->
+      <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,168,76,.25)" stroke-width="1.5"/>
+      <circle cx="40" cy="40" r="30" fill="none" stroke="rgba(201,168,76,.15)" stroke-width="1"/>
+      <!-- Crescent moon -->
+      <circle cx="36" cy="36" r="16" fill="#c9a84c"/>
+      <circle cx="42" cy="30" r="12" fill="#1a3a2a"/>
+      <!-- 8-pointed star -->
+      <g transform="translate(55,20)" fill="#e8c97a">
+        <polygon points="0,-7 1.8,-1.8 7,0 1.8,1.8 0,7 -1.8,1.8 -7,0 -1.8,-1.8" />
+        <polygon points="0,-7 1.8,-1.8 7,0 1.8,1.8 0,7 -1.8,1.8 -7,0 -1.8,-1.8" transform="rotate(22.5)"/>
+      </g>
+      <!-- Small dots decoration -->
+      <circle cx="40" cy="10" r="2" fill="rgba(201,168,76,.5)"/>
+      <circle cx="40" cy="70" r="2" fill="rgba(201,168,76,.5)"/>
+      <circle cx="10" cy="40" r="2" fill="rgba(201,168,76,.5)"/>
+      <circle cx="70" cy="40" r="2" fill="rgba(201,168,76,.5)"/>
+    </svg>
+  </div>
+  <div class="h-ornament">﷽</div>
+  <div class="h-ar" id="h-ar">مرکز علوم القرآن</div>
+  <div class="h-bn" id="h-bn">মারকাযু উলুমিল কুরআন</div>
+  <div class="gold-line"></div>
+  <div class="h-sub" id="h-sub">অনলাইন ফলাফল পোর্টাল</div>
+</header>
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('result',this)">📋 ফলাফল দেখুন</button>
+  <button class="tab-btn" onclick="switchTab('admin',this)">🔐 অ্যাডমিন প্যানেল</button>
+</div>
+
+<main>
+
+<!-- ════ RESULT PANEL ════ -->
+<div class="panel active" id="panel-result">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📋</span>
+      <div><div class="card-title">ফলাফল অনুসন্ধান</div><div class="card-sub">শ্রেণি, পরীক্ষা ও রোল নম্বর দিয়ে ফলাফল দেখুন</div></div>
+    </div>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="fg"><label>শ্রেণি *</label><select id="s-cls"><option value="">— লোড হচ্ছে… —</option></select></div>
+        <div class="fg"><label>পরীক্ষা *</label><select id="s-exam"><option value="">— লোড হচ্ছে… —</option></select></div>
+      </div>
+      <div class="fg"><label>রোল নম্বর *</label>
+        <input type="text" id="s-roll" placeholder="যেমন: ১০১" onkeydown="if(event.key==='Enter')searchResult()">
+      </div>
+      <button class="btn btn-p" id="s-btn" onclick="searchResult()">🔍 &nbsp;ফলাফল দেখুন</button>
+
+      <div class="not-found" id="not-found">
+        <div class="icon">😔</div><h3>ফলাফল পাওয়া যায়নি</h3>
+        <p>রোল নম্বর বা শ্রেণি সঠিক আছে কিনা যাচাই করুন।</p>
+      </div>
+
+      <div class="result-box" id="result-box">
+        <div class="res-head">
+          <div class="res-name" id="r-name">—</div>
+          <div class="res-meta" id="r-meta">
+            <!-- roll, class, exam tags rendered here -->
+          </div>
+        </div>
+        <div class="res-table">
+          <table><thead><tr id="r-thead"></tr></thead><tbody id="r-tbody"></tbody></table>
+        </div>
+        <div class="res-sum" id="r-sum"></div>
+        <div class="dl-bar" id="dl-bar">
+          <button class="btn-dl" onclick="downloadPDF()">📄 PDF ডাউনলোড</button>
+          <button class="btn-dl btn-dl-g" onclick="downloadImage()">🖼️ ছবি ডাউনলোড</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ ADMIN PANEL ════ -->
+<div class="panel" id="panel-admin">
+  <!-- Login -->
+  <div class="card" id="admin-login-card">
+    <div class="card-header"><span class="card-icon">🔐</span>
+      <div><div class="card-title">অ্যাডমিন লগইন</div><div class="card-sub">শুধুমাত্র অনুমোদিত ব্যক্তির জন্য</div></div>
+    </div>
+    <div class="card-body" style="max-width:340px;margin:0 auto">
+      <div class="fg"><label>পাসওয়ার্ড</label>
+        <input type="password" id="a-pass" placeholder="পাসওয়ার্ড দিন" onkeydown="if(event.key==='Enter')adminLogin()">
+      </div>
+      <button class="btn btn-p" onclick="adminLogin()">🔓 &nbsp;প্রবেশ করুন</button>
+      <div class="alert a-e" id="login-err">❌ পাসওয়ার্ড সঠিক নয়</div>
+    </div>
+  </div>
+
+  <!-- Admin Main -->
+  <div id="admin-main" style="display:none">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+      <span class="cbadge">✅ Google Sheets সংযুক্ত</span>
+      <button class="btn-settings" onclick="openSettings()">⚙️ সেটিংস</button>
+    </div>
+
+    <!-- Upload -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📤</span>
+        <div><div class="card-title">রেজাল্ট আপলোড</div><div class="card-sub">Word থেকে টেবিল কপি করে পেস্ট করুন</div></div>
+      </div>
+      <div class="card-body">
+        <div class="form-row">
+          <div class="fg"><label>শ্রেণি</label><input type="text" id="u-cls" placeholder="হিফজ ১ম বর্ষ"></div>
+          <div class="fg"><label>পরীক্ষার নাম</label><input type="text" id="u-exam" placeholder="মধ্যবর্তী পরীক্ষা ২০২৫"></div>
+        </div>
+        <div class="fg">
+          <label>টেবিল পেস্ট করুন</label>
+          <textarea class="paste-area" id="paste-area" placeholder="Word-এ টেবিল সিলেক্ট করুন → Ctrl+C → এখানে Ctrl+V করুন&#10;&#10;প্রথম সারিতে হেডার থাকতে হবে।" oninput="parseTable()"></textarea>
+          <p class="help-text">💡 Word-এর টেবিল সিলেক্ট → Ctrl+C → এখানে Ctrl+V</p>
+        </div>
+        <div class="prev-tbl" id="prev-tbl"><table><thead><tr id="p-thead"></tr></thead><tbody id="p-tbody"></tbody></table></div>
+        <div class="alert" id="parse-alert"></div>
+        <div style="margin-top:16px"><button class="btn btn-g" id="upload-btn" onclick="uploadResults()" style="display:none">☁️ &nbsp;Google Sheets-এ আপলোড</button></div>
+        <div class="alert" id="upload-alert"></div>
+      </div>
+    </div>
+
+    <!-- Saved -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🗂️</span>
+        <div><div class="card-title">সংরক্ষিত ফলাফল</div><div class="card-sub">Google Sheets-এ থাকা সব ফলাফল</div></div>
+      </div>
+      <div class="card-body">
+        <button class="btn btn-p" style="margin-bottom:16px" onclick="loadSavedList()">🔄 &nbsp;রিফ্রেশ</button>
+        <div id="saved-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+<footer>মারকাযু উলুমিল কুরআন — অনলাইন ফলাফল পোর্টাল &nbsp;|&nbsp; সর্বস্বত্ব সংরক্ষিত</footer>
+
+<!-- ════ SETTINGS MODAL ════ -->
+<div id="settings-overlay" class="modal-overlay" onclick="if(event.target===this)closeSettings()">
+<div class="modal-box">
+  <div class="modal-head">
+    <div><div class="modal-title">⚙️ সেটিংস</div><div class="modal-sub">সব পরিবর্তন সকল ডিভাইসে প্রযোজ্য হবে</div></div>
+    <button class="mcb" onclick="closeSettings()">✕</button>
+  </div>
+  <div class="modal-body">
+    <div class="set-tabs">
+      <button class="set-tab active" onclick="switchSetTab('name',this)">📝 নাম এডিট</button>
+      <button class="set-tab" onclick="switchSetTab('media',this)">🖼️ পিকচার/ভিডিও</button>
+      <button class="set-tab" onclick="switchSetTab('pw',this)">🔑 পাসওয়ার্ড</button>
+    </div>
+
+    <!-- ── NAME TAB ── -->
+    <div class="set-panel active" id="set-name">
+      <div class="prev-box">
+        <div class="prev-lbl">লাইভ প্রিভিউ</div>
+        <div id="pv-ar" style="font-family:'Amiri',serif;color:#e8c97a;font-size:2rem;line-height:1.3">مرکز علوم القرآن</div>
+        <div id="pv-bn" style="font-family:'Noto Serif Bengali',serif;color:#f0e6c8;font-weight:600;margin-top:4px;font-size:1.1rem">মারকাযু উলুমিল কুরআন</div>
+      </div>
+      <div class="set-sec">
+        <div class="set-sec-t">আরবি নাম</div>
+        <div class="fg"><label style="font-size:.82rem">টেক্সট</label>
+          <div style="display:flex;gap:7px">
+            <input type="text" id="s-ar-text" style="direction:rtl;font-family:'Amiri',serif;font-size:1.05rem" oninput="updatePrev()">
+            <button onclick="clearName('s-ar-text','pv-ar')" style="padding:9px 11px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:7px;cursor:pointer;font-size:.8rem;white-space:nowrap">🗑️ মুছুন</button>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+          <div><label style="font-size:.82rem">রঙ</label>
+            <div style="display:flex;align-items:center;gap:7px">
+              <input type="color" id="s-ar-color" value="#e8c97a" oninput="updatePrev()" style="width:40px;height:34px;border:2px solid #d4c9a0;border-radius:6px;cursor:pointer;padding:2px">
+              <span id="s-ar-cv" style="font-size:.78rem;color:#666">#e8c97a</span>
+            </div>
+          </div>
+          <div><label style="font-size:.82rem">সাইজ: <span id="s-ar-sv">2.4</span>rem</label>
+            <input type="range" id="s-ar-size" min="1" max="5" step="0.1" value="2.4" oninput="updatePrev()" style="width:100%;accent-color:var(--gm)">
+          </div>
+        </div>
+      </div>
+      <div class="set-sec">
+        <div class="set-sec-t">বাংলা নাম</div>
+        <div class="fg"><label style="font-size:.82rem">টেক্সট</label>
+          <div style="display:flex;gap:7px">
+            <input type="text" id="s-bn-text" style="font-family:'Noto Serif Bengali',serif" oninput="updatePrev()">
+            <button onclick="clearName('s-bn-text','pv-bn')" style="padding:9px 11px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:7px;cursor:pointer;font-size:.8rem;white-space:nowrap">🗑️ মুছুন</button>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+          <div><label style="font-size:.82rem">রঙ</label>
+            <div style="display:flex;align-items:center;gap:7px">
+              <input type="color" id="s-bn-color" value="#f0e6c8" oninput="updatePrev()" style="width:40px;height:34px;border:2px solid #d4c9a0;border-radius:6px;cursor:pointer;padding:2px">
+              <span id="s-bn-cv" style="font-size:.78rem;color:#666">#f0e6c8</span>
+            </div>
+          </div>
+          <div><label style="font-size:.82rem">সাইজ: <span id="s-bn-sv">1.15</span>rem</label>
+            <input type="range" id="s-bn-size" min="0.7" max="3" step="0.05" value="1.15" oninput="updatePrev()" style="width:100%;accent-color:var(--gm)">
+          </div>
+        </div>
+      </div>
+      <div class="set-sec">
+        <div class="set-sec-t">সাবটাইটেল</div>
+        <div style="display:flex;gap:7px">
+          <input type="text" id="s-sub-text" placeholder="অনলাইন ফলাফল পোর্টাল" style="font-family:'Noto Serif Bengali',serif">
+          <button onclick="document.getElementById('s-sub-text').value=''" style="padding:9px 11px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:7px;cursor:pointer;font-size:.8rem;white-space:nowrap">🗑️ মুছুন</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:9px;margin-top:4px">
+        <button onclick="saveNameSettings()" style="flex:1;padding:11px;background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);border:1px solid rgba(201,168,76,.3);border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.92rem;font-weight:700">✅ সংরক্ষণ করুন</button>
+        <button onclick="resetNameSettings()" style="padding:11px 16px;background:#fff;color:#666;border:1px solid #d4c9a0;border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.85rem">↩️ রিসেট</button>
+      </div>
+      <div class="alert" id="name-alert" style="margin-top:9px"></div>
+    </div>
+
+    <!-- ── MEDIA TAB ── -->
+    <div class="set-panel" id="set-media">
+      <div class="set-sec">
+        <div class="set-sec-t">🖼️ পিকচার আপলোড</div>
+        <p style="font-size:.81rem;color:#666;margin-bottom:12px">সাইটে ঢুকলে পপআপ দেখাবে।</p>
+        <div id="media-status"></div>
+        <div class="fg" style="margin-top:12px">
+          <label style="font-size:.82rem">ছবি বেছে নিন (≤5MB)</label>
+          <div class="mua" id="media-drop">
+            <input type="file" id="media-file" accept="image/*" onchange="handleMediaFile(this)">
+            <div id="media-drop-lbl">
+              <div style="font-size:1.8rem;margin-bottom:7px">🖼️</div>
+              <div style="font-size:.85rem;color:#666">ক্লিক করে ছবি বেছে নিন</div>
+              <div style="font-size:.74rem;color:#aaa;margin-top:3px">JPG, PNG, GIF সাপোর্টেড</div>
+            </div>
+          </div>
+        </div>
+        <div id="media-preview" style="display:none;margin-top:9px"></div>
+        <div class="prog-bar" id="media-prog"><div class="prog-fill" id="media-prog-fill"></div></div>
+        <div style="display:flex;gap:9px;margin-top:12px;flex-wrap:wrap">
+          <button id="media-save-btn" onclick="saveMedia()" style="flex:1;padding:11px;background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);border:1px solid rgba(201,168,76,.3);border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.92rem;font-weight:700;display:none">☁️ আপলোড করুন</button>
+          <button onclick="removeMedia()" style="padding:11px 15px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.85rem;font-weight:600">🗑️ সরান</button>
+        </div>
+        <div class="alert" id="media-alert" style="margin-top:9px"></div>
+      </div>
+
+      <div class="set-sec">
+        <div class="set-sec-t">⚙️ পপআপ সেটিং</div>
+        <div class="fg"><label style="font-size:.82rem">পপআপ অবস্থা</label>
+          <select id="media-enabled">
+            <option value="1">✅ চালু — সাইটে ঢুকলে দেখাবে</option>
+            <option value="0">❌ বন্ধ</option>
+          </select>
+        </div>
+        <button onclick="saveMediaToggle()" style="width:100%;padding:10px;background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);border:1px solid rgba(201,168,76,.3);border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.9rem;font-weight:700">✅ সেটিং সংরক্ষণ</button>
+        <div class="alert" id="media-tog-alert" style="margin-top:9px"></div>
+      </div>
+    </div>
+
+    <!-- ── PASSWORD TAB ── -->
+    <div class="set-panel" id="set-pw">
+      <div class="set-sec">
+        <div class="set-sec-t">🔑 অ্যাডমিন পাসওয়ার্ড পরিবর্তন</div>
+        <div class="fg">
+          <label style="font-size:.82rem">বর্তমান পাসওয়ার্ড</label>
+          <input type="password" id="pw-current" placeholder="বর্তমান পাসওয়ার্ড দিন">
+        </div>
+        <div class="fg">
+          <label style="font-size:.82rem">নতুন পাসওয়ার্ড</label>
+          <input type="password" id="pw-new" placeholder="নতুন পাসওয়ার্ড দিন (কমপক্ষে ৪ অক্ষর)">
+        </div>
+        <div class="fg">
+          <label style="font-size:.82rem">নতুন পাসওয়ার্ড নিশ্চিত করুন</label>
+          <input type="password" id="pw-confirm" placeholder="আবার দিন">
+        </div>
+        <button onclick="changePassword()" style="width:100%;padding:11px;background:linear-gradient(135deg,var(--gm),var(--gd));color:var(--gol);border:1px solid rgba(201,168,76,.3);border-radius:8px;cursor:pointer;font-family:'Noto Serif Bengali',serif;font-size:.92rem;font-weight:700">🔑 পাসওয়ার্ড পরিবর্তন করুন</button>
+        <div class="alert" id="pw-alert" style="margin-top:9px"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<audio id="bg-audio" style="display:none"></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+let ADMIN_PW   = 'madrasa123';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwNrRDAOp6_L6rvI9qWWenCknR5v3H6IcmiRx8ICppnu7r6LZryuKHAkobfc9xnriT1/exec';
+let parsedHeaders=[],parsedRows=[];
+let pendingMediaFile=null, pendingVoiceFile=null;
+
+// ── TABS ──────────────────────────────────────
+function switchTab(t,btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-'+t).classList.add('active');
+}
+function switchSetTab(t,btn){
+  document.querySelectorAll('.set-tab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.set-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('set-'+t).classList.add('active');
+}
+
+// ── API ───────────────────────────────────────
+async function gsGet(p){
+  const r=await fetch(SCRIPT_URL+'?'+new URLSearchParams(p));
+  return r.json();
+}
+async function gsPost(b){
+  const r=await fetch(SCRIPT_URL,{method:'POST',body:JSON.stringify(b)});
+  return r.json();
+}
+
+// ── ADMIN LOGIN ───────────────────────────────
+function adminLogin(){
+  if(document.getElementById('a-pass').value!==ADMIN_PW){sa('login-err','a-e','❌ পাসওয়ার্ড সঠিক নয়');return;}
+  document.getElementById('admin-login-card').style.display='none';
+  document.getElementById('admin-main').style.display='block';
+  loadSavedList();
+}
+
+// ── DROPDOWNS ─────────────────────────────────
+async function loadDropdowns(){
+  try{
+    // cache থেকে তাৎক্ষণিক দেখাও
+    const cached = sessionStorage.getItem('examList');
+    if(cached) applyDropdowns(JSON.parse(cached));
+    // background refresh
+    const d = await gsGet({action:'getList'});
+    const list = d.list || [];
+    sessionStorage.setItem('examList', JSON.stringify(list));
+    applyDropdowns(list);
+  }catch(e){ console.warn(e); }
+}
+
+function applyDropdowns(list){
+  const cls = [...new Set(list.map(e=>e.cls))];
+  const ex  = [...new Set(list.map(e=>e.exam))];
+  document.getElementById('s-cls').innerHTML  = '<option value="">— শ্রেণি বেছে নিন —</option>' + cls.map(c=>`<option>${c}</option>`).join('');
+  document.getElementById('s-exam').innerHTML = '<option value="">— পরীক্ষা বেছে নিন —</option>' + ex.map(e=>`<option>${e}</option>`).join('');
+}
+
+// ── SAVED LIST ────────────────────────────────
+async function loadSavedList(){
+  const c=document.getElementById('saved-list');
+  c.innerHTML='<p style="color:#666;text-align:center;padding:18px">🔄 লোড হচ্ছে…</p>';
+  try{
+    const d=await gsGet({action:'getList'});
+    const list=d.list||[];
+    if(!list.length){c.innerHTML='<div class="empty-st"><div class="icon">📭</div><p>এখনো কোনো ফলাফল নেই।</p></div>';return;}
+    c.innerHTML=list.map(i=>`
+      <div class="saved-entry">
+        <div><div class="meta"><strong>${i.cls}</strong> — ${i.exam}</div>
+        <div class="cnt">${i.count}জন &nbsp;|&nbsp; ${i.date}</div></div>
+        <button class="btn-d" onclick="deleteResult('${esc(i.cls)}','${esc(i.exam)}')">মুছুন</button>
+      </div>`).join('');
+  }catch(e){c.innerHTML='<div class="empty-st"><div class="icon">❌</div><p>লোড সমস্যা।</p></div>';}
+}
+
+async function deleteResult(cls,exam){
+  if(!confirm(`"${cls} — ${exam}" মুছে ফেলবেন?`))return;
+  await gsPost({action:'deleteSheet',cls,exam,password:ADMIN_PW});
+  sessionStorage.removeItem('examList');
+  loadSavedList();loadDropdowns();
+}
+
+// ── PARSE TABLE ───────────────────────────────
+function parseTable(){
+  const raw=document.getElementById('paste-area').value.trim();
+  parsedRows=[];parsedHeaders=[];
+  document.getElementById('prev-tbl').classList.remove('show');
+  document.getElementById('upload-btn').style.display='none';
+  if(!raw)return;
+  const lines=raw.split('\n').map(l=>l.trim()).filter(l=>l);
+  if(lines.length<2){sa('parse-alert','a-e','❌ কমপক্ষে ২টি সারি দরকার');return;}
+  const split=l=>{let c=l.split('\t').map(s=>s.trim());if(c.length<2)c=l.split('|').map(s=>s.trim()).filter(Boolean);return c;};
+  parsedHeaders=split(lines[0]);
+  parsedRows=lines.slice(1).map(split).filter(r=>r.some(c=>c));
+  if(parsedHeaders.length<2){sa('parse-alert','a-e','❌ হেডার সনাক্ত করা যায়নি');return;}
+  document.getElementById('p-thead').innerHTML=parsedHeaders.map(h=>`<th>${h}</th>`).join('');
+  document.getElementById('p-tbody').innerHTML=parsedRows.slice(0,5).map(r=>`<tr>${parsedHeaders.map((_,i)=>`<td>${r[i]||''}</td>`).join('')}</tr>`).join('');
+  document.getElementById('prev-tbl').classList.add('show');
+  sa('parse-alert','a-s',`✅ ${parsedRows.length}জনের তথ্য পাওয়া গেছে`);
+  document.getElementById('upload-btn').style.display='flex';
+}
+
+// ── UPLOAD RESULTS ────────────────────────────
+async function uploadResults(){
+  const cls=document.getElementById('u-cls').value.trim();
+  const exam=document.getElementById('u-exam').value.trim();
+  if(!cls||!exam){sa('upload-alert','a-e','❌ শ্রেণি ও পরীক্ষার নাম দিন');return;}
+  if(!parsedRows.length){sa('upload-alert','a-e','❌ কোনো ডেটা নেই');return;}
+  const btn=document.getElementById('upload-btn');
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span>&nbsp;আপলোড হচ্ছে…';
+  try{
+    const d=await gsPost({action:'uploadResult',cls,exam,headers:parsedHeaders,rows:parsedRows,password:ADMIN_PW});
+    if(d.error)sa('upload-alert','a-e','❌ '+d.error);
+    else{
+      sa('upload-alert','a-s',`✅ ${d.count}জনের ফলাফল সংরক্ষিত!`);
+      document.getElementById('paste-area').value='';
+      document.getElementById('prev-tbl').classList.remove('show');
+      parsedRows=[];parsedHeaders=[];btn.style.display='none';
+      sessionStorage.removeItem('examList');
+      loadSavedList();loadDropdowns();
+    }
+  }catch(e){sa('upload-alert','a-e','❌ সংযোগ সমস্যা');}
+  btn.disabled=false;btn.innerHTML='☁️ &nbsp;Google Sheets-এ আপলোড';
+}
+
+// ── SEARCH RESULT ─────────────────────────────
+async function searchResult(){
+  const cls=document.getElementById('s-cls').value;
+  const exam=document.getElementById('s-exam').value;
+  const roll=document.getElementById('s-roll').value.trim();
+  document.getElementById('result-box').classList.remove('show');
+  document.getElementById('not-found').classList.remove('show');
+  if(!cls||!exam||!roll){alert('শ্রেণি, পরীক্ষা ও রোল নম্বর সবই দিন।');return;}
+  const btn=document.getElementById('s-btn');
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span>&nbsp;খোঁজা হচ্ছে…';
+  try{
+    const d=await gsGet({action:'getResult',cls,exam,roll});
+    if(!d.found)document.getElementById('not-found').classList.add('show');
+    else renderResult(d.student,d.headers,cls,exam);
+  }catch(e){alert('সংযোগ সমস্যা।');}
+  btn.disabled=false;btn.innerHTML='🔍 &nbsp;ফলাফল দেখুন';
+}
+
+// ── RENDER RESULT (রোল বাগ ফিক্স) ────────────
+function renderResult(student, headers, cls, exam){
+  const ni = headers.findIndex(h=>/নাম|name/i.test(h));
+  const ri = headers.findIndex(h=>/রোল|roll/i.test(h));
+  const ti = headers.findIndex(h=>/মোট|total/i.test(h));
+  const gi = headers.findIndex(h=>/গ্রেড|grade/i.test(h));
+  // ক্রমিক / serial কলামের index
+  const si = headers.findIndex(h=>/ক্রমিক|serial|sl|sn|#|নং/i.test(h));
+
+  // নাম
+  document.getElementById('r-name').textContent = ni>=0 ? student[headers[ni]] : '—';
+
+  // meta বার
+  document.getElementById('r-meta').innerHTML = `
+    <span>🏫 শ্রেণি: ${cls}</span>
+    <span>📝 ${exam}</span>`;
+
+  // বিষয় টেবিল — নাম, রোল, ক্রমিক বাদ দিয়ে বাকি সব
+  const sub = headers.filter((h,i) =>
+    !/নাম|name/i.test(h) &&
+    !/রোল|roll/i.test(h) &&
+    i !== si
+  );
+  document.getElementById('r-thead').innerHTML='<th>বিষয়</th><th>নম্বর</th>';
+  document.getElementById('r-tbody').innerHTML=sub.map(h=>{
+    const v = student[h]||'—';
+    const c = /গ্রেড|grade/i.test(h)
+      ? `<span class="gb g${v.toUpperCase()}">${v}</span>` : v;
+    return `<tr><td>${h}</td><td>${c}</td></tr>`;
+  }).join('');
+
+  // সারসংক্ষেপ কার্ড
+  const tot = ti>=0 ? student[headers[ti]] : '—';
+  const grd = gi>=0 ? student[headers[gi]] : '—';
+  document.getElementById('r-sum').innerHTML=`
+    <div class="sum-card"><div class="sum-lbl">মোট নম্বর</div><div class="sum-val">${tot}</div></div>
+    <div class="sum-card"><div class="sum-lbl">গ্রেড</div><div class="sum-val">${grd}</div></div>
+    <div class="sum-card"><div class="sum-lbl">পরীক্ষা</div><div class="sum-val" style="font-size:.75rem;font-family:'Noto Serif Bengali',serif;line-height:1.4;word-break:break-word">${exam}</div></div>`;
+
+  document.getElementById('result-box').classList.add('show');
+}
+
+// ── SETTINGS MODAL ────────────────────────────
+async function openSettings(){
+  try{
+    const d=await gsGet({action:'getSettings'});
+    const s=d.settings||{};
+    document.getElementById('s-ar-text').value=s.arText||document.getElementById('h-ar').textContent;
+    document.getElementById('s-bn-text').value=s.bnText||document.getElementById('h-bn').textContent;
+    document.getElementById('s-sub-text').value=s.subText||document.getElementById('h-sub').textContent;
+    const ac=s.arColor||'#e8c97a',bc=s.bnColor||'#f0e6c8';
+    document.getElementById('s-ar-color').value=ac;document.getElementById('s-ar-cv').textContent=ac;
+    document.getElementById('s-bn-color').value=bc;document.getElementById('s-bn-cv').textContent=bc;
+    document.getElementById('s-ar-size').value=s.arSize||2.4;document.getElementById('s-ar-sv').textContent=s.arSize||2.4;
+    document.getElementById('s-bn-size').value=s.bnSize||1.15;document.getElementById('s-bn-sv').textContent=s.bnSize||1.15;
+    document.getElementById('media-enabled').value=s.mediaEnabled||'1';
+    if(s.adminPw) ADMIN_PW=s.adminPw;
+    renderMediaStatus(s);
+    updatePrev();
+  }catch(e){console.warn(e);}
+  document.getElementById('settings-overlay').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeSettings(){
+  document.getElementById('settings-overlay').classList.remove('show');
+  document.body.style.overflow='';
+}
+
+function renderMediaStatus(s){
+  const el = document.getElementById('media-status');
+  const vidEl = document.getElementById('video-status');
+  if(el) el.innerHTML = s.mediaUrl
+    ? `<div class="m-status"><span>🖼️ ছবি সেট আছে</span><button onclick="previewSavedMedia()" style="padding:4px 11px;background:var(--gm);color:white;border:none;border-radius:5px;cursor:pointer;font-size:.78rem">দেখুন</button></div>`
+    : `<div class="m-status"><span style="color:#888">কোনো ছবি নেই</span></div>`;
+  if(vidEl) vidEl.innerHTML = s.youtubeId
+    ? `<div class="m-status"><span>🎬 YouTube ভিডিও সেট আছে</span><a href="https://www.youtube.com/watch?v=${s.youtubeId}" target="_blank" style="padding:4px 11px;background:var(--gm);color:white;border:none;border-radius:5px;cursor:pointer;font-size:.78rem;text-decoration:none">দেখুন</a></div>`
+    : `<div class="m-status"><span style="color:#888">কোনো YouTube ভিডিও নেই</span></div>`;
+}
+function renderVoiceStatus(s){
+  const el=document.getElementById('voice-status');
+  if(s.voiceUrl){
+    el.innerHTML=`<div class="m-status"><span>🎵 ভয়েস সেট আছে</span>
+      <button onclick="previewSavedVoice()" style="padding:4px 11px;background:var(--gm);color:white;border:none;border-radius:5px;cursor:pointer;font-size:.78rem">শুনুন</button>
+    </div>`;
+  }else{
+    el.innerHTML=`<div class="m-status"><span style="color:#888">কোনো ভয়েস নেই</span></div>`;
+  }
+}
+
+// ── NAME SETTINGS ─────────────────────────────
+function updatePrev(){
+  const at=document.getElementById('s-ar-text').value;
+  const bt=document.getElementById('s-bn-text').value;
+  const ac=document.getElementById('s-ar-color').value;
+  const bc=document.getElementById('s-bn-color').value;
+  const as=parseFloat(document.getElementById('s-ar-size').value);
+  const bs=parseFloat(document.getElementById('s-bn-size').value);
+  document.getElementById('s-ar-cv').textContent=ac;
+  document.getElementById('s-bn-cv').textContent=bc;
+  document.getElementById('s-ar-sv').textContent=as;
+  document.getElementById('s-bn-sv').textContent=bs;
+  const pa=document.getElementById('pv-ar');pa.textContent=at||'';pa.style.color=ac;pa.style.fontSize=as+'rem';
+  const pb=document.getElementById('pv-bn');pb.textContent=bt||'';pb.style.color=bc;pb.style.fontSize=bs+'rem';
+}
+function clearName(iid,pid){document.getElementById(iid).value='';document.getElementById(pid).textContent='';updatePrev();}
+
+async function saveNameSettings(){
+  const s={
+    arText:document.getElementById('s-ar-text').value,
+    bnText:document.getElementById('s-bn-text').value,
+    subText:document.getElementById('s-sub-text').value,
+    arColor:document.getElementById('s-ar-color').value,
+    bnColor:document.getElementById('s-bn-color').value,
+    arSize:parseFloat(document.getElementById('s-ar-size').value),
+    bnSize:parseFloat(document.getElementById('s-bn-size').value),
+  };
+  try{
+    await gsPost({action:'saveSettings',settings:s,password:ADMIN_PW});
+    sessionStorage.removeItem('siteSettings');
+    applyHeader(s);
+    sa('name-alert','a-s','✅ সব ডিভাইসে পরিবর্তন হয়েছে!');
+  }catch(e){sa('name-alert','a-e','❌ সমস্যা হয়েছে');}
+}
+
+function applyHeader(s){
+  const ar=document.getElementById('h-ar'),bn=document.getElementById('h-bn'),sub=document.getElementById('h-sub');
+  if(s.arText!==undefined){ar.textContent=s.arText;ar.style.color=s.arColor||'';ar.style.fontSize=(s.arSize||2.4)+'rem';}
+  if(s.bnText!==undefined){bn.textContent=s.bnText;bn.style.color=s.bnColor||'';bn.style.fontSize=(s.bnSize||1.15)+'rem';}
+  if(s.subText!==undefined)sub.textContent=s.subText;
+}
+
+async function resetNameSettings(){
+  if(!confirm('ডিফল্টে ফিরে যাবেন?'))return;
+  const def={arText:'مرکز علوم القرآن',bnText:'মারকাযু উলুমিল কুরআন',subText:'অনলাইন ফলাফল পোর্টাল',arColor:'#e8c97a',bnColor:'#f0e6c8',arSize:2.4,bnSize:1.15};
+  await gsPost({action:'saveSettings',settings:def,password:ADMIN_PW});
+  applyHeader(def);
+  document.getElementById('s-ar-text').value=def.arText;
+  document.getElementById('s-bn-text').value=def.bnText;
+  document.getElementById('s-sub-text').value=def.subText;
+  document.getElementById('s-ar-color').value=def.arColor;
+  document.getElementById('s-bn-color').value=def.bnColor;
+  document.getElementById('s-ar-size').value=def.arSize;
+  document.getElementById('s-bn-size').value=def.bnSize;
+  updatePrev();
+  sa('name-alert','a-i','ℹ️ ডিফল্টে ফিরে গেছে');
+}
+
+// ── MEDIA FILE HANDLING ───────────────────────
+function handleMediaFile(input){
+  const file = input.files[0]; if(!file) return;
+  if(file.size > 5*1024*1024){ sa('media-alert','a-e','❌ ছবি 5MB-এর বেশি হবে না'); return; }
+  pendingMediaFile = file;
+  const url = URL.createObjectURL(file);
+  const prev = document.getElementById('media-preview');
+  prev.innerHTML = `<img src="${url}" style="max-width:100%;max-height:180px;border-radius:8px;object-fit:contain">`;
+  prev.style.display = 'block';
+  document.getElementById('media-save-btn').style.display = 'flex';
+}
+
+async function saveMedia(){
+  if(!pendingMediaFile){ sa('media-alert','a-e','❌ আগে ছবি বেছে নিন'); return; }
+  const btn = document.getElementById('media-save-btn');
+  btn.disabled=true; btn.innerHTML='<span class="spin"></span>&nbsp;সংরক্ষণ হচ্ছে…';
+  showProg('media',true); animateProg('media-prog-fill',50);
+  try{
+    // base64 সরাসরি Sheets-এ — Drive লাগবে না
+    const b64 = await fileToBase64(pendingMediaFile);
+    const dataUrl = 'data:' + pendingMediaFile.type + ';base64,' + b64;
+    animateProg('media-prog-fill',80);
+    await gsPost({action:'saveSettings', settings:{
+      mediaUrl: dataUrl,
+      mediaType: pendingMediaFile.type
+    }, password:ADMIN_PW});
+    animateProg('media-prog-fill',100);
+    sessionStorage.removeItem('siteSettings');
+    sa('media-alert','a-s','✅ ছবি সংরক্ষিত! সব ডিভাইসে দেখাবে।');
+    pendingMediaFile = null;
+    document.getElementById('media-preview').style.display='none';
+    btn.style.display = 'none';
+    setTimeout(()=>{ showProg('media',false); openSettings(); }, 800);
+  }catch(e){ sa('media-alert','a-e','❌ সমস্যা হয়েছে: '+e.message); }
+  btn.disabled=false; btn.innerHTML='☁️ আপলোড করুন';
+}
+
+async function removeMedia(){
+  if(!confirm('ছবি সরাবেন?')) return;
+  await gsPost({action:'saveSettings', settings:{mediaUrl:'',mediaType:''}, password:ADMIN_PW});
+  sessionStorage.removeItem('siteSettings');
+  sa('media-alert','a-i','ℹ️ ছবি সরানো হয়েছে');
+  setTimeout(openSettings, 800);
+}
+
+async function saveMediaToggle(){
+  const v = document.getElementById('media-enabled').value;
+  await gsPost({action:'saveSettings', settings:{mediaEnabled:v}, password:ADMIN_PW});
+  sessionStorage.removeItem('siteSettings');
+  sa('media-tog-alert','a-s', v==='1'?'✅ পপআপ চালু':'✅ পপআপ বন্ধ');
+}
+
+async function previewSavedMedia(){
+  const d = await gsGet({action:'getSettings'});
+  const s = d.settings||{};
+  if(s.mediaUrl) showMediaPopup(s.mediaUrl, 'image');
+}
+
+// ── VOICE FILE HANDLING ───────────────────────
+function handleVoiceFile(input){
+  const file=input.files[0];if(!file)return;
+  if(file.size>10*1024*1024){sa('voice-alert','a-e','❌ ফাইল 10MB-এর বেশি');return;}
+  pendingVoiceFile=file;
+  document.getElementById('voice-player').src=URL.createObjectURL(file);
+  document.getElementById('voice-preview').style.display='block';
+  document.getElementById('voice-save-btn').style.display='flex';
+}
+
+async function saveVoice(){
+  if(!pendingVoiceFile){sa('voice-alert','a-e','❌ আগে ফাইল বেছে নিন');return;}
+  const btn=document.getElementById('voice-save-btn');
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span>&nbsp;আপলোড হচ্ছে…';
+  showProg('voice',true);
+  try{
+    const b64=await fileToBase64(pendingVoiceFile);
+    animateProg('voice-prog-fill',60);
+    const d=await gsPost({
+      action:'uploadVoice',
+      fileName:pendingVoiceFile.name,
+      mimeType:pendingVoiceFile.type,
+      data:b64,
+      password:ADMIN_PW
+    });
+    animateProg('voice-prog-fill',100);
+    if(d.error)throw new Error(d.error);
+    sa('voice-alert','a-s','✅ আপলোড সম্পন্ন! সব ডিভাইসে বাজবে।');
+    pendingVoiceFile=null;
+    document.getElementById('voice-preview').style.display='none';
+    btn.style.display='none';
+    setTimeout(()=>{showProg('voice',false);openSettings();},800);
+  }catch(e){sa('voice-alert','a-e','❌ '+e.message);}
+  btn.disabled=false;btn.innerHTML='☁️ Google Drive-এ আপলোড';
+}
+
+async function removeVoice(){
+  if(!confirm('ভয়েস সরাবেন?'))return;
+  await gsPost({action:'removeVoice',password:ADMIN_PW});
+  sa('voice-alert','a-i','ℹ️ ভয়েস সরানো হয়েছে');
+  setTimeout(openSettings,800);
+}
+
+// ── YOUTUBE VIDEO ─────────────────────────────
+function ytUrlToEmbed(url){
+  // বিভিন্ন YouTube URL format থেকে video ID বের করো
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
+  return m ? m[1] : null;
+}
+
+async function saveYouTubeUrl(){
+  const url = document.getElementById('yt-url-input').value.trim();
+  if(!url){ sa('video-alert','a-e','❌ YouTube লিংক দিন'); return; }
+  const videoId = ytUrlToEmbed(url);
+  if(!videoId){ sa('video-alert','a-e','❌ সঠিক YouTube লিংক দিন'); return; }
+  try{
+    await gsPost({action:'saveSettings', settings:{youtubeId: videoId}, password:ADMIN_PW});
+    sessionStorage.removeItem('siteSettings');
+    sa('video-alert','a-s','✅ ভিডিও সংরক্ষিত! সাইটে ঢুকলে অটো চালু হবে।');
+  }catch(e){ sa('video-alert','a-e','❌ সমস্যা হয়েছে'); }
+}
+
+async function removeVideo(){
+  await gsPost({action:'saveSettings', settings:{youtubeId:''}, password:ADMIN_PW});
+  sessionStorage.removeItem('siteSettings');
+  sa('video-alert','a-i','ℹ️ ভিডিও সরানো হয়েছে');
+  document.getElementById('yt-url-input').value='';
+}
+
+// ── AUDIO — base64 সরাসরি Sheets-এ সেভ ────────
+async function saveVoice(){
+  if(!pendingVoiceFile){ sa('voice-alert','a-e','❌ আগে ফাইল বেছে নিন'); return; }
+  const btn = document.getElementById('voice-save-btn');
+  btn.disabled=true; btn.innerHTML='<span class="spin"></span>&nbsp;আপলোড হচ্ছে…';
+  showProg('voice',true); animateProg('voice-prog-fill',40);
+  try{
+    const b64 = await fileToBase64(pendingVoiceFile);
+    animateProg('voice-prog-fill',80);
+    // base64 সরাসরি Sheets-এ সেভ — Drive streaming সমস্যা এড়ানো
+    const dataUrl = 'data:' + pendingVoiceFile.type + ';base64,' + b64;
+    await gsPost({action:'saveSettings', settings:{
+      voiceData: dataUrl,
+      voiceType: pendingVoiceFile.type
+    }, password:ADMIN_PW});
+    animateProg('voice-prog-fill',100);
+    sessionStorage.removeItem('siteSettings');
+    sa('voice-alert','a-s','✅ অডিও সংরক্ষিত! সব ডিভাইসে বাজবে।');
+    pendingVoiceFile=null;
+    document.getElementById('voice-preview').style.display='none';
+    btn.style.display='none';
+    setTimeout(()=>showProg('voice',false), 800);
+  }catch(e){ sa('voice-alert','a-e','❌ '+e.message); }
+  btn.disabled=false; btn.innerHTML='☁️ আপলোড করুন';
+}
+
+// ── PASSWORD CHANGE ───────────────────────────
+async function changePassword(){
+  const cur=document.getElementById('pw-current').value;
+  const nw=document.getElementById('pw-new').value;
+  const conf=document.getElementById('pw-confirm').value;
+  if(cur!==ADMIN_PW){sa('pw-alert','a-e','❌ বর্তমান পাসওয়ার্ড সঠিক নয়');return;}
+  if(!nw||nw.length<4){sa('pw-alert','a-e','❌ নতুন পাসওয়ার্ড কমপক্ষে ৪ অক্ষর হতে হবে');return;}
+  if(nw!==conf){sa('pw-alert','a-e','❌ দুটো পাসওয়ার্ড মিলছে না');return;}
+  try{
+    await gsPost({action:'saveSettings',settings:{adminPw:nw},password:ADMIN_PW});
+    ADMIN_PW=nw;
+    sessionStorage.removeItem('siteSettings');
+    sa('pw-alert','a-s','✅ পাসওয়ার্ড পরিবর্তন হয়েছে! মনে রাখুন।');
+    document.getElementById('pw-current').value='';
+    document.getElementById('pw-new').value='';
+    document.getElementById('pw-confirm').value='';
+  }catch(e){sa('pw-alert','a-e','❌ সমস্যা হয়েছে');}
+}
+
+// ── MEDIA POPUP ───────────────────────────────
+function showMediaPopup(src, type){
+  const box = document.getElementById('media-box');
+  const img = document.getElementById('media-img');
+  const vid = document.getElementById('media-vid');
+  const oldIframe = document.getElementById('media-iframe');
+  if(oldIframe) oldIframe.remove();
+  vid.style.display = 'none';
+  img.src = src;
+  img.style.display = 'block';
+  document.getElementById('media-overlay').classList.add('show');
+}
+
+function closeMedia(){
+  document.getElementById('media-img').src = '';
+  document.getElementById('media-overlay').classList.remove('show');
+}
+
+// ── LOAD SITE SETTINGS ────────────────────────
+async function loadSiteSettings(){
+  try{
+    const cached = sessionStorage.getItem('siteSettings');
+    if(cached){
+      const s = JSON.parse(cached);
+      applyHeader(s);
+      setupMedia(s);
+      setupAudio(s);
+    }
+    const d = await gsGet({action:'getSettings'});
+    const s = d.settings || {};
+    sessionStorage.setItem('siteSettings', JSON.stringify(s));
+    applyHeader(s);
+    if(s.adminPw) ADMIN_PW=s.adminPw;
+    if(!cached){ setupMedia(s); setupAudio(s); }
+  }catch(e){ console.warn(e); }
+}
+
+function setupMedia(s){
+  if(s.mediaEnabled === '0') return;
+  if(s.mediaUrl){
+    setTimeout(()=> showMediaPopup(s.mediaUrl, 'image'), 600);
+  }
+}
+
+function setupAudio(s){
+  if(!s.voiceData || s.voiceEnabled === '0') return;
+  // base64 data URL সরাসরি — কোনো server/Drive দরকার নেই
+  const audio = document.getElementById('bg-audio');
+  audio.src = s.voiceData;
+  audio.load();
+  const tryPlay = () => audio.play().catch(()=>{});
+  tryPlay();
+  ['touchstart','click'].forEach(ev =>
+    document.addEventListener(ev, tryPlay, {once:true})
+  );
+}
+
+// ── DOWNLOAD ──────────────────────────────────
+function buildCard(){
+  const name=document.getElementById('r-name').textContent;
+  const meta=[...document.querySelectorAll('#r-meta span')].map(s=>s.textContent).join(' &nbsp;|&nbsp; ');
+  const arN=document.getElementById('h-ar').textContent;
+  const bnN=document.getElementById('h-bn').textContent;
+  const rows=[...document.querySelectorAll('#r-tbody tr')].map((tr,i)=>{
+    const td=[...tr.querySelectorAll('td')];
+    const bg=i%2===0?'#ffffff':'#f5f9f6';
+    return`<tr><td style="padding:9px 18px;border-bottom:1px solid #eee;border-right:1px solid #eee;font-weight:600;color:#1a3a2a;text-align:left;background:${bg}">${td[0]?.innerText||''}</td><td style="padding:9px 18px;border-bottom:1px solid #eee;text-align:center;color:#333;background:${bg}">${td[1]?.innerText||''}</td></tr>`;
+  }).join('');
+  const sums=[...document.querySelectorAll('#r-sum .sum-card')].map(c=>`<div style="flex:1;background:#fff;padding:14px;text-align:center;border-right:1px solid #e8c97a"><div style="font-size:.72rem;color:#888;margin-bottom:4px">${c.querySelector('.sum-lbl')?.innerText||''}</div><div style="font-size:1.3rem;font-weight:700;color:#1a3a2a">${c.querySelector('.sum-val')?.innerText||''}</div></div>`).join('');
+  return`<div id="print-card" style="position:fixed;left:-9999px;top:0;width:600px;background:#ffffff;font-family:'Noto Serif Bengali',serif;overflow:hidden;border:1px solid #e0e0e0">
+
+    <!-- শীর্ষ ব্যানার -->
+    <div style="background:#1a3a2a;padding:18px 24px;text-align:center">
+      <div style="font-family:'Amiri',serif;font-size:1.1rem;color:#c9a84c;letter-spacing:4px;margin-bottom:5px">﷽</div>
+      <div style="font-family:'Amiri',serif;font-size:1.5rem;color:#e8c97a;line-height:1.3">${arN}</div>
+      <div style="font-size:.85rem;color:#f0e6c8;font-weight:600;margin-top:3px">${bnN}</div>
+      <div style="width:60px;height:1px;background:rgba(201,168,76,.5);margin:8px auto 4px"></div>
+      <div style="font-size:.72rem;color:rgba(201,168,76,.7);letter-spacing:2px">ফলাফল কার্ড</div>
+    </div>
+
+    <!-- শিক্ষার্থীর তথ্য -->
+    <div style="background:#f8f8f8;border-bottom:2px solid #e8c97a;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <div>
+        <div style="font-family:'Amiri',serif;font-size:1.35rem;color:#1a3a2a;font-weight:700">${name}</div>
+        <div style="font-size:.8rem;color:#555;margin-top:3px">${meta}</div>
+      </div>
+      <div style="background:#1a3a2a;color:#e8c97a;padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600">ফলাফল প্রতিবেদন</div>
+    </div>
+
+    <!-- নম্বর টেবিল -->
+    <table style="width:100%;border-collapse:collapse">
+      <thead>
+        <tr style="background:#2d6a4f">
+          <th style="padding:10px 18px;color:#e8c97a;text-align:left;font-size:.85rem;font-weight:700;border-right:1px solid rgba(255,255,255,.15)">বিষয়</th>
+          <th style="padding:10px 18px;color:#e8c97a;text-align:center;font-size:.85rem;font-weight:700">প্রাপ্ত নম্বর</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+
+    <!-- সারসংক্ষেপ -->
+    <div style="display:flex;gap:0;border-top:2px solid #e8c97a">
+      ${sums}
+    </div>
+
+    <!-- ফুটার -->
+    <div style="background:#f8f8f8;border-top:1px solid #e0e0e0;padding:8px 18px;display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:.68rem;color:#888">${bnN}</div>
+      <div style="font-size:.68rem;color:#888">অনলাইন ফলাফল পোর্টাল</div>
+    </div>
+  </div>`;
+}
+
+async function downloadImage(){
+  const ex=document.getElementById('print-card');if(ex)ex.remove();
+  document.body.insertAdjacentHTML('beforeend',buildCard());
+  await new Promise(r=>setTimeout(r,300));
+  const canvas=await html2canvas(document.getElementById('print-card'),{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false});
+  document.getElementById('print-card').remove();
+  const dataUrl=canvas.toDataURL('image/png');
+  const a=document.createElement('a');
+  a.download=`ফলাফল_${document.getElementById('r-name').textContent}.png`;
+  a.href=dataUrl;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+async function downloadPDF(){
+  const ex=document.getElementById('print-card');if(ex)ex.remove();
+  document.body.insertAdjacentHTML('beforeend',buildCard());
+  await new Promise(r=>setTimeout(r,300));
+  const canvas=await html2canvas(document.getElementById('print-card'),{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false});
+  document.getElementById('print-card').remove();
+  const {jsPDF}=window.jspdf;
+  const img=canvas.toDataURL('image/png');
+  const pw=210,ph=(canvas.height*pw)/canvas.width;
+  const pdf=new jsPDF({orientation:ph>pw?'p':'l',unit:'mm',format:[pw,ph]});
+  pdf.addImage(img,'PNG',0,0,pw,ph);
+  // মোবাইলেও কাজ করে
+  const blob=pdf.output('blob');
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=`ফলাফল_${document.getElementById('r-name').textContent}.pdf`;
+  a.target='_blank';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(()=>URL.revokeObjectURL(url),3000);
+}
+
+// ── HELPERS ───────────────────────────────────
+function sa(id,cls,msg){
+  const el=document.getElementById(id);if(!el)return;
+  el.className='alert '+cls+' show';el.textContent=msg;
+  setTimeout(()=>el.classList.remove('show'),6000);
+}
+function esc(s){return s.replace(/'/g,"\\'").replace(/"/g,'\\"');}
+
+function fileToBase64(file){
+  return new Promise((res,rej)=>{
+    const r=new FileReader();
+    r.onload=e=>res(e.target.result.split(',')[1]);
+    r.onerror=rej;
+    r.readAsDataURL(file);
+  });
+}
+
+function showProg(id,show){
+  document.getElementById(id+'-prog').style.display=show?'block':'none';
+  if(!show)document.getElementById(id+'-prog-fill').style.width='0';
+}
+function animateProg(id,pct){
+  document.getElementById(id).style.width=pct+'%';
+}
+
+window.addEventListener('load',()=>{loadDropdowns();loadSiteSettings();});
+</script>
+</body>
+</html>
